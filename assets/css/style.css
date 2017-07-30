@@ -18,6 +18,7 @@ html, body {
 	width: 250px;
 	border-top: 3px solid #FAF39A;
 	border-right: 1px solid #FAF39A;
+	border-bottom: 3px solid #FAF39A;
 	display: flex;
 	flex-direction: column;
 }
@@ -26,24 +27,28 @@ html, body {
 	height: 100vh;
 	width: 2px;
 	background-color: #83C675;
+	border-bottom: 6px solid #83C675;
 }
 
 .two {
 	height: 100%;
 	width: 1px;
 	background-color: #33C5F3;
+	border-bottom: 6px solid #33C5F3;
 }
 
 .three {
 	height: 100%;
 	width: 2px;
 	background-color: #7956A3;
+	border-bottom: 6px solid #7956A3;
 }
 
 .four {
 	height: 100%;
 	width: 1px;
 	background-color: #F16667;
+	border-bottom: 6px solid #F16667;
 }
 
 .search-field-container {
@@ -62,6 +67,11 @@ html, body {
 	font-family: font151473;
 }
 
+.text-field:focus {
+	border: none;
+	outline: none;
+}
+
 .btn {
 	width: 80px;
 	padding: 3px 0;
@@ -71,6 +81,15 @@ html, body {
 	font-family: font151473;
 }
 
+.btn:active {
+	transform: translateX(1px) translateY(1px);
+}
+
+.btn:focus {
+	border: none;
+	outline: none;
+}
+
 .btn-container {
 
 }
@@ -78,5 +97,6 @@ html, body {
 .gif-display-wrapper {
 	height: 100%;
 	border-top: 3px solid #F16667;
+	border-bottom: 3px solid #F16667;
 	flex-grow: 1;
 }
