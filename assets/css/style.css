@@ -46,6 +46,18 @@ html, body {
 	height: 100px;
 	width: 100%;
 	margin-top: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.search-instructions {
+	width: 200px;
+	font-family: font151473;
+	color: white;
+	font-size: 0.8em;
+	text-align: center;
 }
 
 .text-field {
@@ -124,6 +136,7 @@ html, body {
 
 .gif-display {
 	width: 100%;
+	margin-top: 20px;
 	display: flex;
 	justify-content: space-around;
 	align-content: flex-start;

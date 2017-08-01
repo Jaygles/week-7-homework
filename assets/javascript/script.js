@@ -21,7 +21,7 @@ $('#submit-btn').on('click', function() {
 $(document).on('click', '.search-btn', function() {
 	$('.gif-display').html('');
 	var searchTerm = $(this).attr('value');
-	var xhr = $.get("https://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&rating=g&api_key=dc6zaTOxFJmzC&limit=10");
+	var xhr = $.get("https://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&rating=pg&api_key=dc6zaTOxFJmzC&limit=10");
 	xhr.done(function(result) {
 		console.log(result);
 		for (var i = result.data.length - 1; i >= 0; i--) {
