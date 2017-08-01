@@ -1,5 +1,5 @@
 html, body {
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	display: flex;
 	flex-grow: 1;
@@ -8,14 +8,12 @@ html, body {
 }
 
 .main-wrapper {
-	height: 100%;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 }
 
 .side-bar {
-	height: calc(100vh - 6px);
 	width: 250px;
 	border-top: 3px solid #FAF39A;
 	border-right: 1px solid #FAF39A;
@@ -25,25 +23,21 @@ html, body {
 }
 
 .one {
-	height: 100vh;
 	width: 2px;
 	background-color: #83C675;
 }
 
 .two {
-	height: 100%;
 	width: 1px;
 	background-color: #33C5F3;
 }
 
 .three {
-	height: 100%;
 	width: 2px;
 	background-color: #7956A3;
 }
 
 .four {
-	height: 100%;
 	width: 1px;
 	background-color: #F16667;
 }
@@ -72,11 +66,14 @@ html, body {
 .btn {
 	width: 80px;
 	padding: 3.5px 0;
-	margin-top: 10px;
 	border: 0;
 	background-color: #878685;
 	color: white;
 	font-family: font151473;
+}
+
+.search-btn {
+	margin: 2px 1px;
 }
 
 .search-btn:nth-of-type(5n+0) {
@@ -109,7 +106,7 @@ html, body {
 }
 
 .btn-container {
-	height: calc(100vh - 6px);
+	height: 700px;
 	width: 250px;
 	display: flex;
 	align-items: center;
@@ -120,24 +117,23 @@ html, body {
 }
 
 .gif-display-wrapper {
-	height: calc(100vh - 6px);
 	border-top: 3px solid #F16667;
 	border-bottom: 3px solid #F16667;
 	flex-grow: 1;
 }
 
 .gif-display {
-	height: 100vh;
 	width: 100%;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-around;
 	align-content: flex-start;
-	align-items: baseline;
 	flex-wrap: wrap;
 }
 
 .gif-wrapper {
-
+	min-height: 200px;
+	width: 250px;
+	margin: 10px;
 }
 
 .gif {
@@ -148,24 +144,26 @@ html, body {
 	color: white;
 	font-family: font151473;
 	text-align: center;
+	font-size: 0.5em;
+	margin-bottom: 5px;
 }
 
-.gif:nth-of-type(5n+0) {
+.gif-wrapper:nth-of-type(5n+0) {
 	border: 1px solid #FAF39A;
 }
 
-.gif:nth-of-type(5n+1) {
+.gif-wrapper:nth-of-type(5n+1) {
 	border: 1px solid #83C675;
 }
 
-.gif:nth-of-type(5n+2) {
+.gif-wrapper:nth-of-type(5n+2) {
 	border: 1px solid #33C5F3;
 }
 
-.gif:nth-of-type(5n+3) {
+.gif-wrapper:nth-of-type(5n+3) {
 	border: 1px solid #7956A3;
 }
 
-.gif:nth-of-type(5n+4) {
+.gif-wrapper:nth-of-type(5n+4) {
 	border: 1px solid #F16667;
 }
