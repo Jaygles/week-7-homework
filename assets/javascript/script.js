@@ -8,7 +8,7 @@ $('#submit-btn').on('click', function() {
 $(document).on('click', '.search-btn', function() {
 	var searchTerm = $(this).attr('value');
 	console.log(searchTerm);
-	var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&api_key=dc6zaTOxFJmzC&limit=5");
+	var xhr = $.get("https://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&api_key=dc6zaTOxFJmzC&limit=5");
 	xhr.done(function(result) {
 		console.log(result);
 		for (var i = result.data.length - 1; i >= 0; i--) {
