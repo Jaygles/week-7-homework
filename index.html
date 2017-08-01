@@ -6,14 +6,16 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="assets/javascript/script.js"></script>
+	
 </head>
 <body>
 <main class="main-wrapper">
 	<section class="side-bar">
 		<div class="search-field-container">
-			<input id="current-input" class="text-field" type="text" name="searchadd">
-			<input id="submit-btn" class="btn" type="submit" value="Submit">
+			<form class="search-field">
+				<input id="current-input" class="text-field" type="text" name="searchadd">
+				<button id="submit-btn" class="btn" type="submit">Submit</button>
+			</form>
 		</div>
 		<div class="btn-container">
 		</div>
@@ -25,5 +27,6 @@
 	<section class="gif-display-wrapper">
 	</section>
 </main>
+<script type="text/javascript" src="assets/javascript/script.js"></script>
 </body>
 </html>

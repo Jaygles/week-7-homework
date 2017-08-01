@@ -71,10 +71,31 @@ html, body {
 .btn {
 	width: 80px;
 	padding: 3.5px 0;
+	margin-top: 10px;
 	border: 0;
 	background-color: #878685;
 	color: white;
 	font-family: font151473;
+}
+
+.btn:nth-of-type(5n+0) {
+	border: 1px solid #FAF39A;
+}
+
+.btn:nth-of-type(5n+1) {
+	border: 1px solid #83C675;
+}
+
+.btn:nth-of-type(5n+2) {
+	border: 1px solid #33C5F3;
+}
+
+.btn:nth-of-type(5n+3) {
+	border: 1px solid #7956A3;
+}
+
+.btn:nth-of-type(5n+4) {
+	border: 1px solid #F16667;
 }
 
 .btn:active {
@@ -87,7 +108,14 @@ html, body {
 }
 
 .btn-container {
-
+	height: calc(100vh - 6px);
+	width: 250px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-flow: column;
+	align-content: stretch;
+	flex-wrap: wrap;
 }
 
 .gif-display-wrapper {
