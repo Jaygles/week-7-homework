@@ -19,6 +19,7 @@ $('#submit-btn').on('click', function() {
 
 // Populating page with gifs function
 $(document).on('click', '.search-btn', function() {
+	$('.gif-display').html('');
 	var searchTerm = $(this).attr('value');
 	var xhr = $.get("https://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&api_key=dc6zaTOxFJmzC&limit=10");
 	xhr.done(function(result) {
