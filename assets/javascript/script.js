@@ -1,6 +1,16 @@
 var buttonCount = 0;
-
+var initialButtons = ["It's always sunny in Philadelphia", "Spongebob Squarepants", "Cats and dogs", "Norm Macdonald"];
 //Creating search button function
+
+function initialize() {
+	for (var i = initialButtons.length - 1; i >= 0; i--) {
+		searchValue = initialButtons[i].replace(/ /g,"+");
+		$('.btn-container').append('<button class="btn search-btn" value="' + searchValue + '">' + initialButtons[i] + '</button>');
+	};
+};
+
+initialize();
+
 $('#submit-btn').on('click', function() {
 	event.preventDefault();
 	if (buttonCount >= 84) {
