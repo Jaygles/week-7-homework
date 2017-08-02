@@ -137,6 +137,16 @@ html, body {
 	justify-content: space-between;
 }
 
+.animation-instructions {
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+	font-family: font151473;
+	font-size: 0.7em;
+	color: white;
+	align-self: flex-start;
+}
+
 .gif-display {
 	width: 100%;
 	margin-top: 20px;

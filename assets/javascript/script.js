@@ -1,5 +1,5 @@
 var buttonCount = 0;
-var initialButtons = ["It's always sunny in Philadelphia", "Spongebob Squarepants", "Cats and dogs", "Norm Macdonald"];
+var initialButtons = ["It's Always Sunny in Philadelphia", "Spongebob Squarepants", "Cats and dogs", "Norm Macdonald"];
 //Creating search button function
 
 function initialize() {
