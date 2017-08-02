@@ -23,22 +23,22 @@ html, body {
 }
 
 .one {
-	width: 2px;
+	min-width: 2px;
 	background-color: #83C675;
 }
 
 .two {
-	width: 1px;
+	min-width: 1px;
 	background-color: #33C5F3;
 }
 
 .three {
-	width: 2px;
+	min-width: 2px;
 	background-color: #7956A3;
 }
 
 .four {
-	width: 1px;
+	min-width: 1px;
 	background-color: #F16667;
 }
 
@@ -132,6 +132,9 @@ html, body {
 	border-top: 3px solid #F16667;
 	border-bottom: 3px solid #F16667;
 	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .gif-display {
@@ -179,4 +182,14 @@ html, body {
 
 .gif-wrapper:nth-of-type(5n+4) {
 	border: 1px solid #F16667;
+}
+
+.quasi-footer {
+	width: 100%;
+	margin: 10px 0;
+	text-align: center;
+	font-family: font151473;
+	font-size: 0.7em;
+	color: white;
+	align-self: flex-end;
 }
